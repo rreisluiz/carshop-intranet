@@ -1,0 +1,96 @@
+* {
+    font-family: 'PT Sans Narrow', sans-serif;
+}
+
+body {
+    background: url("../images/background-login.jpg");
+    background-size: 100%;
+    background-position-y: center;
+    background-repeat: no-repeat;
+}
+
+.container {
+    display: grid;
+    grid-template-columns: 2fr 3fr;
+}
+
+main {
+    display: grid;
+    grid-template-rows: 15vh 10vh 60vh 15vh;
+    grid-template-columns: 15% 70% 15%;
+    background-color: rgba(23, 42, 58, 0.8);
+}
+
+.logo {
+    grid-row: 2/3;
+    grid-column: 2/3;
+}
+
+.logo > h1 {
+    text-align: center;
+    font-family: 'Lobster', cursive;
+    font-size: 5em;
+    color: white;
+}
+
+.login {
+    display: grid;
+    grid-template-rows: 10% 15% 65% 10%;
+    grid-template-columns: 10% 80% 10%;
+    grid-row: 3/4;
+    grid-column: 2/3;
+    background-color: white;
+}
+
+.login-title {
+    grid-row: 2/3;
+    grid-column: 2/3;
+}
+
+.login-title > h2 {
+    font-size: 3em;
+    font-weight: 800;
+}
+
+form {
+    display: inline-flex;
+    flex-direction: column;
+    grid-row: 3/4;
+    grid-column: 2/3;
+}
+
+label {
+    font-size: 1.5em;
+    font-weight: 600;
+}
+
+input {
+    height: 40px;
+    padding: 3%;
+    margin: 1% 0 5% 0;
+    font-size: 1.5em;
+}
+
+.btn-login {
+    height: 60px;
+    text-align: center;
+    color: white;
+    background-color:#172A3A;
+}
+
+.btn-login:hover {
+    cursor: pointer;
+    opacity: 0.8;
+}
+
+.btn-login:active {
+    opacity: 1;
+}
+
+.institutional {
+    margin: 5% 0 0 0;
+    text-align: center;
+    font-size: 2em;
+    font-family: 'Lobster', cursive;
+}
+

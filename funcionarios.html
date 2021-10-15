@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width">
+        <title>Home - Intranet VV</title>
+        <link rel="stylesheet" href="css/reset.css">
+        <link rel="stylesheet" href="css/style-home.css">
+        <link rel="stylesheet" href="css/style-veiculos.css">
+        <link rel="stylesheet" href="css/style-clientes.css">
+        <link href="https://fonts.googleapis.com/css2?family=PT+Sans+Narrow&display=swap" rel="stylesheet">
+        <script src="https://kit.fontawesome.com/b6f9a82d96.js" crossorigin="anonymous"></script>
+    </head>
+    <body>
+        <div class="container">
+            <header>
+                <div class="logo-title">
+                    <div class="logo">
+                        <h1>VrumCar <i class="fas fa-car"></i> |</h1>
+                    </div>
+                    <div class="header-title">
+                        <h1>Funcionários</h1>
+                    </div>
+                </div>
+                <div class="user">
+                    <div class="user-photo">
+                        <div class="photo">
+                        </div>
+                    </div>
+                    <div class="user-data">
+                        <h2 class="user-id">ID: 64240</h2>
+                        <h2 class="user-name">Rodrigo Luiz Menezes dos Reis</h2>
+                        <h2 class="user-function">Gerente</h2>
+                    </div>
+                    <div class="btn-logout" onclick="changeWindow(logoff)">
+                        <i class="fas fa-sign-out-alt"></i>
+                    </div>
+                </div>
+            </header>
+            <nav>
+                <div class="nav-items">
+                    <div id="index" class="nav-item" onclick="changeWindow(index)">
+                        <i class="fas fa-user-circle"></i>
+                    </div>
+                    <hr>
+                    <div id="vendas" class="nav-item" onclick="changeWindow(vendas)">
+                        <i class="fas fa-coins"></i>
+                    </div>
+                    <hr>
+                    <div id="veiculos" class="nav-item" onclick="changeWindow(veiculos)">
+                        <i class="fas fa-car-side"></i>
+                    </div>
+                    <hr>
+                    <div id="clientes" class="nav-item" onclick="changeWindow(clientes)">
+                        <i class="fas fa-users"></i>
+                    </div>
+                    <hr>
+                    <div id="funcionarios" class="nav-item" onclick="changeWindow(funcionarios)">
+                        <i class="fas fa-id-card-alt"></i>
+                    </div>
+                    <hr>
+                    <div id="fornecedores" class="nav-item" onclick="changeWindow(fornecedores)">
+                        <i class="fas fa-truck"></i>
+                    </div>
+                    <hr>
+                    <div id="orcamento" class="nav-item" onclick="changeWindow(orcamento)">
+                        <i class="fas fa-search-dollar"></i>
+                    </div>
+                    <hr>
+                    <div id="ranking" class="nav-item" onclick="changeWindow(ranking)">
+                        <i class="fas fa-medal"></i>
+                    </div>
+                    <hr>
+                </div>
+                <script src="js/nav.js"></script>
+            </nav>
+            <main>
+                <div class="vehicles-main">
+                    <div class="filter">
+                        <div class="search">
+                            <div class="search-field">
+                                <input type="text" class="filter-search" id="search-cod-c" name="search-cod-c" placeholder="Código">
+                                <input type="button" class="btn-search" name="btn-search" id="btn-search-v" value="Buscar">
+                            </div>
+                            <div class="search-field">
+                                <input type="text" class="filter-search" id="search-cpf-c" name="search-cpf-c" placeholder="CPF">
+                                <input type="button" class="btn-search" name="btn-search" id="btn-search-v" value="Buscar">
+                            </div>
+                            <div class="search-field">
+                                <input type="text" class="filter-search" id="search-name-c" name="search-name-c" placeholder="Nome">
+                                <input type="button" class="btn-search" name="btn-search" id="btn-search-v" value="Buscar">
+                            </div>
+                        </div>
+                        <div class="results">
+                            <div class="results-found">
+                                <h2>Resultados encontrados: <strong>3</strong></h2>
+                            </div>
+                            <input type="button" class="btn-cadastro" name="cadastrar-venda" Value="Cadastrar novo funcionário" onclick="changeWindow(cadastroFuncionarios)">
+                        </div>
+                    </div>
+                    <div class="vehicles">
+                        <table>
+                            <thead>
+                                <tr>
+                                    <th>Código</th>
+                                    <th>CPF</th>
+                                    <th>RG</th>
+                                    <th>Nome</th>
+                                    <th>Dt. Nascimento</th>
+                                    <th>Endereço</th>
+                                    <th>Número</th>
+                                    <th>Bairro</th>
+                                    <th>Cidade</th>
+                                    <th>UF</th>
+                                    <th>Telefone</th>
+                                    <th></th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr id="1">
+                                    <td id="cod-cliente">64240</td>
+                                    <td id="cpf-cliente">465.147.854-12</td>
+                                    <td id="rg-cliente">16.156.485-8</td>
+                                    <td id="nome-cliente">Rodrigo Luiz</td>
+                                    <td id="dt-nasc-cliente">03/10/1990</td>
+                                    <td id="endereco-cliente">Rua do coqueiro</td>
+                                    <td id="numero-cliente">74</td>
+                                    <td id="bairro-cliente">Vila Boa</td>
+                                    <td id="cidade-cliente">Carapicuíba</td>
+                                    <td id="uf-cliente">SP</td>
+                                    <td id="tel-cliente">(11) 93165-4857</td>
+                                    <td id="more-cliente" onclick="changeWindow(dadosFuncionario)"><i class="fas fa-plus"></i></td>
+                                </tr>
+                                <tr id="1">
+                                    <td id="cod-cliente">64859</td>
+                                    <td id="cpf-cliente">165.147.945-12</td>
+                                    <td id="rg-cliente">35.786.451-8</td>
+                                    <td id="nome-cliente">Aroldo Santana Menezes</td>
+                                    <td id="dt-nasc-cliente">15/05/1980</td>
+                                    <td id="endereco-cliente">Rua General Osório</td>
+                                    <td id="numero-cliente">65</td>
+                                    <td id="bairro-cliente">Vila Amarela</td>
+                                    <td id="cidade-cliente">Barueri</td>
+                                    <td id="uf-cliente">SP</td>
+                                    <td id="tel-cliente">(11) 98741-6524</td>
+                                    <td id="more-cliente"><i class="fas fa-plus"></i></td>
+                                </tr>
+                                <tr id="1">
+                                    <td id="cod-cliente">64351</td>
+                                    <td id="cpf-cliente">365.148.987-45</td>
+                                    <td id="rg-cliente">64.748.498-4</td>
+                                    <td id="nome-cliente">João Carvalho</td>
+                                    <td id="dt-nasc-cliente">05/08/1990</td>
+                                    <td id="endereco-cliente">Rua Violeta</td>
+                                    <td id="numero-cliente">62</td>
+                                    <td id="bairro-cliente">Vila das flores</td>
+                                    <td id="cidade-cliente">Barueri</td>
+                                    <td id="uf-cliente">SP</td>
+                                    <td id="tel-cliente">(11) 91854-4662</td>
+                                    <td id="more-cliente"><i class="fas fa-plus"></i></td>
+                                </tr>
+                                <!-- <tr>
+                                    <td><input type="checkbox" name="selected"></td>
+                                    <td>1654</td>
+                                    <td>Audi</td>
+                                    <td>Audi</td>
+                                    <td>2020</td>
+                                    <td>250000</td>
+                                </tr> -->
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+            </main>
+        </div>
+        <script src="js/index.js"></script>
+    </body>
+</html>

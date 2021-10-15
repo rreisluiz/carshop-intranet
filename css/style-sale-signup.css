@@ -1,0 +1,24 @@
+.main-sale-data-container {
+    grid-template-rows: 21vh 40vh 31vh 35.1vh 5vh;
+}
+
+.sale-data-s-main {
+    grid-column: 1/3;
+}
+
+.salesman-data-s {
+    margin: 0;
+}
+
+.btn-finish > input {
+    float: right;
+    width: 30%;
+    text-align: center;
+    color: white;
+    background-color: #172A3A;
+    font-size: 1.1em;
+    font-weight: 600;
+    padding: 5px;
+    border: solid 1px #172A3A;
+}
+

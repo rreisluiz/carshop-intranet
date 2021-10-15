@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width">
+        <title>Home - Intranet VV</title>
+        <link rel="stylesheet" href="css/reset.css">
+        <link rel="stylesheet" href="css/style-home.css">
+        <link href="https://fonts.googleapis.com/css2?family=PT+Sans+Narrow&display=swap" rel="stylesheet">
+        <script src="https://kit.fontawesome.com/b6f9a82d96.js" crossorigin="anonymous"></script>
+    </head>
+    <body>
+        <div class="container">
+            <header>
+                <div class="logo-title">
+                    <div class="logo">
+                        <h1>VrumCar <i class="fas fa-car"></i> |</h1>
+                    </div>
+                    <div class="header-title">
+                        <h1>Página do Vendedor</h1>
+                    </div>
+                </div>
+                <div class="user">
+                    <div class="user-photo">
+                        <div class="photo">
+                        </div>
+                    </div>
+                    <div class="user-data">
+                        <h2 class="user-id">ID: 64240</h2>
+                        <h2 class="user-name">Rodrigo Luiz Menezes dos Reis</h2>
+                        <h2 class="user-function">Gerente</h2>
+                    </div>
+                    <div class="btn-logout" onclick="changeWindow(logoff)">
+                        <i class="fas fa-sign-out-alt"></i>
+                    </div>
+                </div>
+            </header>
+            <nav>
+                <div class="nav-items">
+                    <div id="index" class="nav-item" onclick="changeWindow(index)">
+                        <i class="fas fa-user-circle"></i>
+                    </div>
+                    <hr>
+                    <div id="vendas" class="nav-item" onclick="changeWindow(vendas)">
+                        <i class="fas fa-coins"></i>
+                    </div>
+                    <hr>
+                    <div id="veiculos" class="nav-item" onclick="changeWindow(veiculos)">
+                        <i class="fas fa-car-side"></i>
+                    </div>
+                    <hr>
+                    <div id="clientes" class="nav-item" onclick="changeWindow(clientes)">
+                        <i class="fas fa-users"></i>
+                    </div>
+                    <hr>
+                    <div id="funcionarios" class="nav-item" onclick="changeWindow(funcionarios)">
+                        <i class="fas fa-id-card-alt"></i>
+                    </div>
+                    <hr>
+                    <div id="fornecedores" class="nav-item" onclick="changeWindow(fornecedores)">
+                        <i class="fas fa-truck"></i>
+                    </div>
+                    <hr>
+                    <div id="orcamento" class="nav-item" onclick="changeWindow(orcamento)">
+                        <i class="fas fa-search-dollar"></i>
+                    </div>
+                    <hr>
+                    <div id="ranking" class="nav-item" onclick="changeWindow(ranking)">
+                        <i class="fas fa-medal"></i>
+                    </div>
+                    <hr>
+                </div>
+            </nav>
+            <main>
+                <div class="main-container">
+                    <div class="salesman-reports">
+                        <div class="title">
+                            <h2>Relatório Rodrigo Outubro/2020</h1>
+                        </div>
+                        <div class="reports-data">
+                            <h3 id="vendas">Vendas realizadas: <strong>1</strong></h3>
+                            <h3 id="valor-vendas">Valor total das vendas: <strong>R$200.000,00</strong></h3>
+                            <h3 id="comissao">Comissão total (1% do valor total das vendas): <strong>R$2.000,00</strong></h3>
+                        </div>
+                    </div>
+                    <div class="title">
+                        <h2>Vendas</h1>
+                    </div>
+                    <div class="salesman-sales">
+                        <div class="sales">
+                            <div class="sale">
+                                <div class="v-photo" style="background: url('/images/hyundai_azera.jpg');background-size: 100%;background-position: 50%;">
+                                </div>
+                                <div class="sale-main">
+                                    <div class="sale-data">
+                                        <div class="vehicle-data">
+                                            <h3 id="codigo-venda"><strong>Código: 1</strong></h3>
+                                            <h3 id="data-venda">Data da venda: 03/10/2020</h3>
+                                            <h3 id="codigo-veiculo"><strong>Código do veículo: 1</strong></h3>
+                                            <h3 id="nome-veiculo">Veículo: Hyundai Azera 3.0 V6 GDI Automático</h3>
+                                        </div>
+                                        <div class="buyer-data">
+                                            <h3 id="codigo-cliente"><strong>Código do cliente: 1</strong></h3>
+                                            <h3 id="nome-cliente">Cliente: Rafael Lima</h3>
+                                            <h3 id="cpf-cliente">CPF: 165.145.154-78</h3>
+                                        </div>
+                                    </div>
+                                    <div class="salesman-data">
+                                        <div class="salesman-photo photo">
+                                        </div>
+                                        <div class="salesman-main-data">
+                                            <h3 id="codigo-vendedor"><strong>Código: 64240</strong></h3>
+                                            <h3 id="nome-vendedor">Nome do vendedor: Rodrigo Luiz Menezes dos Reis</h3>
+                                            <h3 id="cpf-vendedor">CPF do vendedor: 465.147.854.12</h3>
+                                        </div>
+                                    </div>
+                                    <div class="sale-value">
+                                        <h3>Valor da venda:</h3>
+                                        <h3 id="valor-venda"><strong>R$200.000,00</strong></h3>
+                                    </div>
+                                    <div class="more-information">
+                                        <i class="fas fa-info-circle" onclick="changeWindow(dadosVenda)"></i>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <script src="js/nav.js"></script>
+            </main>
+        </div>
+    </body>
+</html>

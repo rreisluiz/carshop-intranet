@@ -1,0 +1,166 @@
+.vehicles-main {
+    display: grid;
+    grid-row: 2/3;
+    grid-column: 2/3;
+    grid-template-rows: 15% 85%;
+    grid-template-columns: 70% 30%;
+}
+
+.vehicles-main > .filter {
+    grid-row: 1/2;
+    grid-column: 1/3;
+}
+
+.filter-v {
+    display: flex;
+    flex-grow: 1;
+}
+
+.filter-v > select {
+    flex-grow: 1;
+    font-size: 1.1em;
+    height: 35px;
+}
+
+.search > .search-field {
+    flex-grow: 3;
+}
+
+.search > .search-field:first-child {
+    margin: 0;
+}
+
+.vehicles {
+    overflow: hidden;
+    grid-row: 2/3;
+    grid-column: 1/2;
+    background-color: white;
+    border: solid .5px #172A3A;
+}
+
+table {
+    width: 100%;
+    font-size: 1.2em;
+    text-align: center;
+}
+
+table, th, td {
+    border: 1px solid black;
+    border-collapse: collapse;
+}
+
+.vehicles > table > tr {
+}
+
+td:first-child {
+    position: sticky;
+}
+
+th {
+    font-weight: 600;
+}
+
+th, td {
+    padding: 5px;
+}
+
+.hover {
+    background-color: #F25F5C;
+}
+
+.more-information-vehicle {
+    grid-row: 2/3;
+    grid-column: 2/3;
+    margin: 60px 0 0 20px;
+}
+
+.vehicle-photo {
+    width: 100%;
+    height: 350px;
+    background-color: #C4C5C5;
+    border: 1px solid #172A3A;
+    font-size: 7em;
+}
+
+.vehicle-photo > h1 {
+    margin: 120px 0;
+}
+
+.btn-info {
+    margin: 20px 0 0 0 ;
+}
+
+.sale-disp {
+    background-color: white;
+    border: 1px solid #172A3A;
+    width: 100%;
+    padding: 2% 0;
+}
+
+.sale-disp > h2 {
+    font-size: 1.2em;
+    text-align: center;
+}
+
+.sale-date {
+    display: flex;
+    flex-direction: row;
+    margin: 10px 0 0 0;
+}
+
+.sale-date > div {
+    background-color: white;
+    border: 1px solid #172A3A;
+    border-collapse: collapse;
+    width: 100%;
+    padding: 2% 0;
+}
+
+.sale-date > div:first-child {
+    background-color: #172A3A;
+    color: white;
+}
+
+.sale-date > div > h2 {
+    font-size: 1.2em;
+    text-align: center;
+}
+
+.btn-more-delete {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    width: 100%;
+    margin: 10px 0 0 0;
+}
+
+.btn-more {
+    text-decoration: none;
+    text-align: center;
+}
+
+.btn-more-delete > input, .btn-more {
+    font-size: 1.1em;
+    padding: 1.5% 0;
+    color: white;
+    border: 1px solid #172A3A;
+    width: 49%;
+}
+
+.btn-more-delete > input:first-child, .btn-more {
+    background-color: #172A3A;
+}
+
+.btn-more-delete > input:last-child {
+    background-color: #F25F5C;
+}
+
+.btn-more-delete > input:hover, .btn-more:hover{
+    cursor: pointer;
+    opacity: 0.8;
+}
+
+.fade-out {
+	opacity: 0;
+	transition: .5s;
+}

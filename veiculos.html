@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width">
+        <title>Home - Intranet VV</title>
+        <link rel="stylesheet" href="css/reset.css">
+        <link rel="stylesheet" href="css/style-home.css">
+        <link rel="stylesheet" href="css/style-veiculos.css">
+        <link href="https://fonts.googleapis.com/css2?family=PT+Sans+Narrow&display=swap" rel="stylesheet">
+        <script src="https://kit.fontawesome.com/b6f9a82d96.js" crossorigin="anonymous"></script>
+        <script src="static-db/veiculos.json"></script>
+        <script src="js/server.js"></script>
+    </head>
+    <body>
+        <div class="container">
+            <header>
+                <div class="logo-title">
+                    <div class="logo">
+                        <h1>VrumCar <i class="fas fa-car"></i> |</h1>
+                    </div>
+                    <div class="header-title">
+                        <h1>Veículos</h1>
+                    </div>
+                </div>
+                <div class="user">
+                    <div class="user-photo">
+                        <div class="photo">
+                        </div>
+                    </div>
+                    <div class="user-data">
+                        <h2 class="user-id">ID: 64240</h2>
+                        <h2 class="user-name">Rodrigo Luiz Menezes dos Reis</h2>
+                        <h2 class="user-function">Gerente</h2>
+                    </div>
+                    <div class="btn-logout" onclick="changeWindow(logoff)">
+                        <i class="fas fa-sign-out-alt"></i>
+                    </div>
+                </div>
+            </header>
+            <nav>
+                <div class="nav-items">
+                    <div id="index" class="nav-item" onclick="changeWindow(index)">
+                        <i class="fas fa-user-circle"></i>
+                    </div>
+                    <hr>
+                    <div id="vendas" class="nav-item" onclick="changeWindow(vendas)">
+                        <i class="fas fa-coins"></i>
+                    </div>
+                    <hr>
+                    <div id="veiculos" class="nav-item" onclick="changeWindow(veiculos)">
+                        <i class="fas fa-car-side"></i>
+                    </div>
+                    <hr>
+                    <div id="clientes" class="nav-item" onclick="changeWindow(clientes)">
+                        <i class="fas fa-users"></i>
+                    </div>
+                    <hr>
+                    <div id="funcionarios" class="nav-item" onclick="changeWindow(funcionarios)">
+                        <i class="fas fa-id-card-alt"></i>
+                    </div>
+                    <hr>
+                    <div id="fornecedores" class="nav-item" onclick="changeWindow(fornecedores)">
+                        <i class="fas fa-truck"></i>
+                    </div>
+                    <hr>
+                    <div id="orcamento" class="nav-item" onclick="changeWindow(orcamento)">
+                        <i class="fas fa-search-dollar"></i>
+                    </div>
+                    <hr>
+                    <div id="ranking" class="nav-item" onclick="changeWindow(ranking)">
+                        <i class="fas fa-medal"></i>
+                    </div>
+                    <hr>
+                </div>
+                <script src="js/nav.js"></script>
+            </nav>
+            <main>
+                <div class="vehicles-main">
+                    <div class="filter">
+                        <div class="search">
+                            <div class="filter-v">
+                                <select name="vehicles-brand" id="vehicles-brands">
+                                    <option>Marca</option>
+                                    <option value="hyundai">Hyundai</option>
+                                    <option value="ford">Ford</option>
+                                    <option value="bmw">BMW</option>
+                                </select>
+                                <select name="vehicles-year" id="vehicle-years">
+                                    <option>Ano</option>
+                                    <option value="2015">2015</option>
+                                    <option value="2016">2016</option>
+                                    <option value="2017">2017</option>
+                                    <option value="2018">2018</option>
+                                    <option value="2019">2019</option>
+                                    <option value="2020">2020</option>
+                                </select>
+                            </div>
+                            <div class="search-field">
+                                <input type="text" class="filter-search" id="search-cod-v" name="search-cod-v" placeholder="Código">
+                                <input type="button" class="btn-search" name="btn-search" id="btn-search-v" value="Buscar">
+                            </div>
+                            <div class="search-field">
+                                <input type="text" class="filter-search" id="search-vehicle" name="search-vehicle" placeholder="Veículo">
+                                <input type="button" class="btn-search" name="btn-search" id="btn-search-v" value="Buscar">
+                            </div>
+                        </div>
+                        <div class="results">
+                            <div class="results-found">
+                                <h2 id="found-results">Resultados encontrados: <strong>3</strong></h2>
+                            </div>
+                            <input type="button" class="btn-cadastro" name="cadastrar-venda" Value="Cadastrar novo veículo" onclick="changeWindow(cadastroVeiculos)">
+                        </div>
+                    </div>
+                    <div class="vehicles">
+                        <table id="veiculos">
+                            <thead>
+                                <tr>
+                                    <th></th>
+                                    <th>Código</th>
+                                    <th>Marca</th>
+                                    <th>Modelo</th>
+                                    <th>Versão</th>
+                                    <th>Ano</th>
+                                    <th>Preço</th>
+                                </tr>
+                            </thead>
+                            <tbody id="table-veiculos">
+                            </tbody>
+                        </table>
+                    </div>
+                    <div class="more-information-vehicle">
+                        <div class="vehicle-photo">
+                            <img width="100%" id="v-photo" src="" alt="foto-veiculo">
+                        </div>
+                        <div class="btn-info">
+                            <div class="sale-disp">
+                                <h2 id="v-situacao"></h2>
+                            </div>
+                            <div class="sale-date">
+                                <div class="sale-date-1">
+                                    <h2>Data da venda:</h2>
+                                </div>
+                                <div class="sale-date-2">
+                                    <h2 id="v-data-venda"></h2>
+                                </div>
+                            </div>
+                            <div class="btn-more-delete">
+                                <a href="" id="btn-more" class="btn-more btn">Mais</a>
+                                <input type="button" id="btn-delete" class="btn-delete" value="Excluir">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </main>
+        </div>
+    <script type="module" src="js/veiculos.js"></script>
+    </body>
+</html>

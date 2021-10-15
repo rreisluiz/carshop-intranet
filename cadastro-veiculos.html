@@ -1,0 +1,213 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width">
+        <title>Home - Intranet VV</title>
+        <link rel="stylesheet" href="css/reset.css">
+        <link rel="stylesheet" href="css/style-home.css">
+        <link rel="stylesheet" href="css/style-veiculos.css">
+        <link rel="stylesheet" href="css/style-dados-veiculo.css">
+        <link href="https://fonts.googleapis.com/css2?family=PT+Sans+Narrow&display=swap" rel="stylesheet">
+        <script src="https://kit.fontawesome.com/b6f9a82d96.js" crossorigin="anonymous"></script>
+    </head>
+    <body>
+        <div class="container">
+            <header>
+                <div class="logo-title">
+                    <div class="logo">
+                        <h1>VrumCar <i class="fas fa-car"></i> |</h1>
+                    </div>
+                    <div class="header-title">
+                        <h1>Cadastrar novo veículo</h1>
+                    </div>
+                </div>
+                <div class="user">
+                    <div class="user-photo">
+                        <div class="photo">
+                        </div>
+                    </div>
+                    <div class="user-data">
+                        <h2 class="user-id">ID: 64240</h2>
+                        <h2 class="user-name">Rodrigo Luiz Menezes dos Reis</h2>
+                        <h2 class="user-function">Gerente</h2>
+                    </div>
+                    <div class="btn-logout" onclick="changeWindow(logoff)">
+                        <i class="fas fa-sign-out-alt"></i>
+                    </div>
+                </div>
+            </header>
+            <nav>
+                <div class="nav-items">
+                    <div id="index" class="nav-item" onclick="changeWindow(index)">
+                        <i class="fas fa-user-circle"></i>
+                    </div>
+                    <hr>
+                    <div id="vendas" class="nav-item" onclick="changeWindow(vendas)">
+                        <i class="fas fa-coins"></i>
+                    </div>
+                    <hr>
+                    <div id="veiculos" class="nav-item" onclick="changeWindow(veiculos)">
+                        <i class="fas fa-car-side"></i>
+                    </div>
+                    <hr>
+                    <div id="clientes" class="nav-item" onclick="changeWindow(clientes)">
+                        <i class="fas fa-users"></i>
+                    </div>
+                    <hr>
+                    <div id="fornecedores" class="nav-item" onclick="changeWindow(fornecedores)">
+                        <i class="fas fa-truck"></i>
+                    </div>
+                    <hr>
+                    <div id="funcionarios" class="nav-item" onclick="changeWindow(funcionarios)">
+                        <i class="fas fa-id-card-alt"></i>
+                    </div>
+                    <hr>
+                    <div id="orcamento" class="nav-item" onclick="changeWindow(orcamento)">
+                        <i class="fas fa-search-dollar"></i>
+                    </div>
+                    <hr>
+                    <div id="ranking" class="nav-item" onclick="changeWindow(ranking)">
+                        <i class="fas fa-medal"></i>
+                    </div>
+                    <hr>
+                </div>
+                <script src="js/nav.js"></script>
+            </nav>
+            <main>
+                <div class="vehicle-data-main">
+                    <div class="more-information-vehicle">
+                        <label for="cod-vehicle">Código:</label>
+                        <input readonly type="text" name="cod-vehicle" id="cod-vehicle" class="ds-input cod-input">
+                        <div class="vehicle-photo">
+                            <h1 style="text-align: center;"><i class="fas fa-car-side"></i></h1>
+                        </div>
+                        <label for="btn-image" id="btn-image" class="btn-image btn">
+                            <input type="file" accept=".jpg,.png" id="btn-image-file" class="btn-image" value="Alterar foto">
+                            Selecionar foto
+                        </label>
+                        <div class="btn-info">
+                            <input type="submit" name="save-edits" id="btn-finish-signup" class="btn-save btn" value="Finalizar cadastro">
+                        </div>
+                    </div>
+                    <div class="vehicle-datasheet">
+                        <div class="datasheet-1">
+                            <div class="ds-vehicle">
+                                <h1 class="title">Automóvel</h1>
+                                <div class="ds-data">
+                                    <label for="ds-marca">Marca:</label>
+                                    <input type="text" name="ds-marca" id="ds-marca" class="ds-input">
+                                    <label for="ds-modelo">Modelo:</label>
+                                    <input type="text" name="ds-modelo" id="ds-modelo" class="ds-input">
+                                    <label for="ds-versao">Versão:</label>
+                                    <input type="text" name="ds-versao" id="ds-versao" class="ds-input">
+                                    <label for="ds-ano">Ano:</label>
+                                    <input type="text" name="ds-ano" id="ds-ano" class="ds-input">
+                                    <label for="ds-cor">Cor:</label>
+                                    <input type="text" name="ds-cor" id="ds-cor" class="ds-input">
+                                    <label for="ds-carroceria">Carroceria:</label>
+                                    <input type="text" name="ds-carroceria" id="ds-carroceria" class="ds-input">
+                                    <label for="ds-combustivel">Combustível:</label>
+                                    <input type="text" name="ds-combustivel" id="ds-combustivel" class="ds-input">
+                                    <label for="ds-importado">Importado:</label>
+                                    <input type="text" name="ds-importado" id="ds-importado" class="ds-input">
+                                    <label for="ds-valor">Valor:</label>
+                                    <input type="text" name="ds-valor" id="ds-valor" class="ds-input">
+                                </div>
+                            </div>                          
+                            <div class="ds-engine">
+                                <h1 class="title">Motor</h1>
+                                <div class="ds-data">
+                                    <label for="ds-cilindrada">Cilindrada:</label>
+                                    <input type="text" name="ds-ctrl-tracao" id="ds-cilindrada" class="ds-input">
+                                    <label for="ds-potencia">Potência:</label>
+                                    <input type="text" name="ds-potencia" id="ds-potencia" class="ds-input">
+                                    <label for="ds-qtd-cilindros">Quantidade de cilindros:</label>
+                                    <input type="text" name="ds-qtd-cilindros" id="ds-qtd-cilindros" class="ds-input">
+                                    <label for="ds-qtd-valvulas">Quantidade de Válvulas:</label>
+                                    <input type="text" name="ds-qtd-valvulas" id="ds-qtd-valvulas" class="ds-input">
+                                    <label for="ds-aceleracao">Aceleração:</label>
+                                    <input type="text" name="ds-aceleracao" id="ds-aceleracao" class="ds-input">
+                                    <label for="ds-transmissao">Transmissão:</label>
+                                    <input type="text" name="ds-transmissao" id="ds-transmissao" class="ds-input">
+                                    <label for="ds-veloc-max">Velocidade máxima:</label>
+                                    <input type="text" name="ds-veloc-max" id="ds-veloc-max" class="ds-input">
+                                    <label for="ds-consumo">Consumo:</label>
+                                    <input type="text" name="ds-consumo" id="ds-consumo" class="ds-input">
+                                </div>
+                            </div>
+                            <div class="ds-comfort">
+                                <h1 class="title">Conforto</h1>
+                                <div class="ds-data">
+                                    <label for="ds-vidro-eletr">Vidro elétrico:</label>
+                                    <input type="text" name="ds-vidro-eletr" id="ds-vidro-eletr" class="ds-input">
+                                    <label for="ds-ar-condic">Ar Condicionado:</label>
+                                    <input type="text" name="ds-ar-condic" id="ds-ar-condic" class="ds-input">
+                                    <label for="ds-direcao">Direção:</label>
+                                    <input type="text" name="ds-direcao" id="ds-direcao" class="ds-input">
+                                    <label for="ds-trava-eletr">Trava elétrca:</label>
+                                    <input type="text" name="ds-trava-eletr" id="ds-trava-eletr" class="ds-input">
+                                    <label for="ds-sensor">Sensor:</label>
+                                    <input type="text" name="ds-sensor" id="ds-sensor" class="ds-input">
+                                    <label for="ds-piloto-auto">Piloto automático:</label>
+                                    <input type="text" name="ds-piloto-autoo" id="ds-piloto-auto" class="ds-input">
+                                    <label for="ds-reg-vol">Regulagem do volante:</label>
+                                    <input type="text" name="ds-reg-vol" id="ds-reg-vol" class="ds-input">
+                                    <label for="ds-som">Som:</label>
+                                    <input type="text" name="ds-som" id="ds-som" class="ds-input">
+                                </div>
+                            </div>
+                        </div>
+                        <div class="datasheet-2">
+                            <div class="ds-brake">
+                                <h1 class="title">Freios</h1>
+                                <div class="ds-data">
+                                    <label for="ds-freio-t">Freio T.:</label>
+                                    <input type="text" name="ds-freio-t" id="ds-freio-t" class="ds-input">
+                                    <label for="ds-freio-d">Freio D.:</label>
+                                    <input type="text" name="ds-freio-d" id="ds-freio-d" class="ds-input">
+                                </div>
+                            </div>
+                            <div class="ds-security">
+                                <h1 class="title">Segurança</h1>
+                                <div class="ds-data">
+                                    <label for="ds-ctrl-estab">Controle de estabilidade:</label>
+                                    <input type="text" name="ds-ctrl-estab" id="ds-ctrl-estab" class="ds-input">
+                                    <label for="ds-ctrl-tracao">Controle de tração:</label>
+                                    <input type="text" name="ds-ctrl-tracao" id="ds-ctrl-tracao" class="ds-input">
+                                    <label for="ds-ctrl-tracao">Quantidade de Airbags:</label>
+                                    <input type="text" name="ds-qtd-airbag" id="ds-qtd-airbag" class="ds-input">
+                                </div>
+                            </div>
+                            <div class="ds-wheels">
+                                <h1 class="title">Rodas</h1>
+                                <div class="ds-data">
+                                    <label for="ds-tipo-rodas">Tipo de rodas:</label>
+                                    <input type="text" name="ds-tipo-rodas" id="ds-tipo-rodas" class="ds-input">
+                                    <label for="ds-aro">Aro:</label>
+                                    <input type="text" name="ds-aro" id="ds-aro" class="ds-input">
+                                    <label for="ds-estepe">Estepe:</label>
+                                    <input type="text" name="ds-estepe" id="ds-estepe" class="ds-input">
+                                </div>
+                            </div>
+                            <div class="ds-suspension">
+                                <h1 class="title">Suspensão</h1>
+                                <div class="ds-data">
+                                    <label for="ds-dianteiras">Dianteiras:</label>
+                                    <input type="text" name="ds-dianteiras" id="ds-dianteiras" class="ds-input">
+                                    <label for="ds-m-dianteiras">Molas Dianteiras:</label>
+                                    <input type="text" name="ds-m-dianteiras" id="ds-m-dianteiras" class="ds-input">
+                                    <label for="ds-traseiras">Traseiras:</label>
+                                    <input type="text" name="ds-traseira" id="ds-traseiras" class="ds-input">
+                                    <label for="ds-m-traseiras">Molas Traseiras:</label>
+                                    <input type="text" name="ds-m-traseiras" id="ds-m-traseiras" class="ds-input">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </main>
+        </div>
+        <script type="module" src="js/cadastro-veiculo.js"></script>
+    </body>
+</html>

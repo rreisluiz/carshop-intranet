@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width">
+        <title>Home - Intranet VV</title>
+        <link rel="stylesheet" href="css/reset.css">
+        <link rel="stylesheet" href="css/style-home.css">
+        <link rel="stylesheet" href="css/style-veiculos.css">
+        <link rel="stylesheet" href="css/style-clientes.css">
+        <link rel="stylesheet" href="css/style-dados-veiculo.css">
+        <link href="https://fonts.googleapis.com/css2?family=PT+Sans+Narrow&display=swap" rel="stylesheet">
+        <script src="https://kit.fontawesome.com/b6f9a82d96.js" crossorigin="anonymous"></script>
+    </head>
+    <body>
+        <div class="container">
+            <header>
+                <div class="logo-title">
+                    <div class="logo">
+                        <h1>VrumCar <i class="fas fa-car"></i> |</h1>
+                    </div>
+                    <div class="header-title">
+                        <h1>Cadastrar novo cliente</h1>
+                    </div>
+                </div>
+                <div class="user">
+                    <div class="user-photo">
+                        <div class="photo">
+                        </div>
+                    </div>
+                    <div class="user-data">
+                        <h2 class="user-id">ID: 64240</h2>
+                        <h2 class="user-name">Rodrigo Luiz Menezes dos Reis</h2>
+                        <h2 class="user-function">Gerente</h2>
+                    </div>
+                    <div class="btn-logout" onclick="changeWindow(logoff)">
+                        <i class="fas fa-sign-out-alt"></i>
+                    </div>
+                </div>
+            </header>
+            <nav>
+                <div class="nav-items">
+                    <div id="index" class="nav-item" onclick="changeWindow(index)">
+                        <i class="fas fa-user-circle"></i>
+                    </div>
+                    <hr>
+                    <div id="vendas" class="nav-item" onclick="changeWindow(vendas)">
+                        <i class="fas fa-coins"></i>
+                    </div>
+                    <hr>
+                    <div id="veiculos" class="nav-item" onclick="changeWindow(veiculos)">
+                        <i class="fas fa-car-side"></i>
+                    </div>
+                    <hr>
+                    <div id="clientes" class="nav-item" onclick="changeWindow(clientes)">
+                        <i class="fas fa-users"></i>
+                    </div>
+                    <hr>
+                    <div id="funcionarios" class="nav-item" onclick="changeWindow(funcionarios)">
+                        <i class="fas fa-id-card-alt"></i>
+                    </div>
+                    <hr>
+                    <div id="fornecedores" class="nav-item" onclick="changeWindow(fornecedores)">
+                        <i class="fas fa-truck"></i>
+                    </div>
+                    <hr>
+                    <div id="orcamento" class="nav-item" onclick="changeWindow(orcamento)">
+                        <i class="fas fa-search-dollar"></i>
+                    </div>
+                    <hr>
+                    <div id="ranking" class="nav-item" onclick="changeWindow(ranking)">
+                        <i class="fas fa-medal"></i>
+                    </div>
+                    <hr>
+                </div>
+                <script src="js/nav.js"></script>
+            </nav>
+            <main>
+                <div class="client-data-main">
+                    <div class="client-datas">
+                        <h1 class="title">Cliente</h1>
+                        <div class="c-data">
+                            <label for="cd-codigo">Código:</label>
+                            <input type="text" name="cd-codigo" id="cd-codigo" class="ds-input">
+                            <label for="cd-nome">Nome:</label>
+                            <input type="text" name="cd-nome" id="cd-nome" class="ds-input">
+                            <label for="cd-cpf">CPF:</label>
+                            <input type="text" name="cd-cpf" id="cd-cpf" class="ds-input">
+                            <label for="cd-cnh">CNH:</label>
+                            <input type="text" name="cd-rg" id="cd-rg" class="ds-input">
+                            <label for="cd-dt-nasc">Data de nascimento:</label>
+                            <input type="text" name="cd-dt-nasc" id="cd-dt-nasc" class="ds-input">
+                            <label for="cd-carroceria">Telefone:</label>
+                            <input type="tel" name="cd-carroceria" id="cd-carroceria" class="ds-input">
+                        </div>
+                    </div>
+                    <div class="client-data-address">
+                        <h1 class="title">Endereço</h1>
+                        <div class="c-data">
+                            <label for="cd-endereco">Endereço:</label>
+                            <input type="text" name="cd-endereco" id="cd-endereco" class="ds-input">
+                            <label for="cd-numero">Número:</label>
+                            <input type="text" name="cd-numero" id="cd-numero" class="ds-input">
+                            <label for="cd-uf">UF:</label>
+                            <input type="text" name="cd-uf" id="cd-uf" class="ds-input">
+                            <label for="cd-cidade">Cidade:</label>
+                            <input type="text" name="cd-cidade" id="cd-cidade" class="ds-input">
+                            <label for="cd-dt-bairro">Bairro:</label>
+                            <input type="text" name="cd-bairro" id="cd-bairro" class="ds-input">
+                        </div>
+                    </div>
+                    <div class="other-functions">
+                        <div class="btn-finish">
+                            <input type="button" id="btn-finish" class="btn-finish-s btn" value="Finalizar cadastro de cliente" onclick="changeWindow(clientes)">
+                        </div>
+                    </div>
+                </div>
+            </main>
+        </div>
+    </body>
+</html>

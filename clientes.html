@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width">
+        <title>Home - Intranet VV</title>
+        <link rel="stylesheet" href="css/reset.css">
+        <link rel="stylesheet" href="css/style-home.css">
+        <link rel="stylesheet" href="css/style-veiculos.css">
+        <link rel="stylesheet" href="css/style-clientes.css">
+        <link href="https://fonts.googleapis.com/css2?family=PT+Sans+Narrow&display=swap" rel="stylesheet">
+        <script src="https://kit.fontawesome.com/b6f9a82d96.js" crossorigin="anonymous"></script>
+    </head>
+    <body>
+        <div class="container">
+            <header>
+                <div class="logo-title">
+                    <div class="logo">
+                        <h1>VrumCar <i class="fas fa-car"></i> |</h1>
+                    </div>
+                    <div class="header-title">
+                        <h1>Clientes</h1>
+                    </div>
+                </div>
+                <div class="user">
+                    <div class="user-photo">
+                        <div class="photo">
+                        </div>
+                    </div>
+                    <div class="user-data">
+                        <h2 class="user-id">ID: 64240</h2>
+                        <h2 class="user-name">Rodrigo Luiz Menezes dos Reis</h2>
+                        <h2 class="user-function">Gerente</h2>
+                    </div>
+                    <div class="btn-logout" onclick="changeWindow(logoff)">
+                        <i class="fas fa-sign-out-alt"></i>
+                    </div>
+                </div>
+            </header>
+            <nav>
+                <div class="nav-items">
+                    <div id="index" class="nav-item" onclick="changeWindow(index)">
+                        <i class="fas fa-user-circle"></i>
+                    </div>
+                    <hr>
+                    <div id="vendas" class="nav-item" onclick="changeWindow(vendas)">
+                        <i class="fas fa-coins"></i>
+                    </div>
+                    <hr>
+                    <div id="veiculos" class="nav-item" onclick="changeWindow(veiculos)">
+                        <i class="fas fa-car-side"></i>
+                    </div>
+                    <hr>
+                    <div id="clientes" class="nav-item" onclick="changeWindow(clientes)">
+                        <i class="fas fa-users"></i>
+                    </div>
+                    <hr>
+                    <div id="funcionarios" class="nav-item" onclick="changeWindow(funcionarios)">
+                        <i class="fas fa-id-card-alt"></i>
+                    </div>
+                    <hr>
+                    <div id="fornecedores" class="nav-item" onclick="changeWindow(fornecedores)">
+                        <i class="fas fa-truck"></i>
+                    </div>
+                    <hr>
+                    <div id="orcamento" class="nav-item" onclick="changeWindow(orcamento)">
+                        <i class="fas fa-search-dollar"></i>
+                    </div>
+                    <hr>
+                    <div id="ranking" class="nav-item" onclick="changeWindow(ranking)">
+                        <i class="fas fa-medal"></i>
+                    </div>
+                    <hr>
+                </div>
+                <script src="js/nav.js"></script>
+            </nav>
+            <main>
+                <div class="vehicles-main">
+                    <div class="filter">
+                        <div class="search">
+                            <div class="search-field">
+                                <input type="text" class="filter-search" id="search-cod-c" name="search-cod-c" placeholder="Código">
+                                <input type="button" class="btn-search" name="btn-search" id="btn-search-v" value="Buscar">
+                            </div>
+                            <div class="search-field">
+                                <input type="text" class="filter-search" id="search-cpf-c" name="search-cpf-c" placeholder="CPF">
+                                <input type="button" class="btn-search" name="btn-search" id="btn-search-v" value="Buscar">
+                            </div>
+                            <div class="search-field">
+                                <input type="text" class="filter-search" id="search-name-c" name="search-name-c" placeholder="Nome">
+                                <input type="button" class="btn-search" name="btn-search" id="btn-search-v" value="Buscar">
+                            </div>
+                        </div>
+                        <div class="results">
+                            <div class="results-found">
+                                <h2>Resultados encontrados: <strong>3</strong></h2>
+                            </div>
+                            <input type="button" class="btn-cadastro" name="cadastrar-venda" Value="Cadastrar novo cliente" onclick="changeWindow(cadastroClientes)">
+                        </div>
+                    </div>
+                    <div class="vehicles">
+                        <table>
+                            <thead>
+                                <tr>
+                                    <th>Código</th>
+                                    <th>CPF</th>
+                                    <th>CNH</th>
+                                    <th>Nome</th>
+                                    <th>Dt. Nascimento</th>
+                                    <th>Endereço</th>
+                                    <th>Número</th>
+                                    <th>Bairro</th>
+                                    <th>Cidade</th>
+                                    <th>UF</th>
+                                    <th>Telefone</th>
+                                    <th></th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr id="cliente1">
+                                    <td id="cod-cliente">1</td>
+                                    <td id="cpf-cliente">165.145.154-78</td>
+                                    <td id="cnh-cliente">16547826518</td>
+                                    <td id="nome-cliente">Rafael Lima</td>
+                                    <td id="dt-nasc-cliente">03/10/1990</td>
+                                    <td id="endereco-cliente">Rua da Neblina</td>
+                                    <td id="numero-cliente">85</td>
+                                    <td id="bairro-cliente">Pedreira</td>
+                                    <td id="cidade-cliente">Barueri</td>
+                                    <td id="uf-cliente">SP</td>
+                                    <td id="tel-cliente">(11) 94584-4859</td>
+                                    <td id="more-cliente" onclick="changeWindow(dadosCliente)"><i class="fas fa-plus"></i></td>
+                                </tr>
+                                <tr id="cliente2">
+                                    <td id="cod-cliente">2</td>
+                                    <td id="cpf-cliente">789.154.951-12</td>
+                                    <td id="cnh-cliente">63281547984</td>
+                                    <td id="nome-cliente">Juliana Mendes</td>
+                                    <td id="dt-nasc-cliente">05/07/1985</td>
+                                    <td id="endereco-cliente">Rua das flores</td>
+                                    <td id="numero-cliente">16</td>
+                                    <td id="bairro-cliente">Jardim das flores</td>
+                                    <td id="cidade-cliente">Barueri</td>
+                                    <td id="uf-cliente">SP</td>
+                                    <td id="tel-cliente">(11) 94748-2548</td>
+                                    <td id="more-cliente"><i class="fas fa-plus"></i></td>
+                                </tr>
+                                <tr id="cliente3">
+                                    <td id="cod-cliente">3</td>
+                                    <td id="cpf-cliente">645.827.196-34</td>
+                                    <td id="cnh-cliente">91648235748</td>
+                                    <td id="nome-cliente">Mateus dos Santos</td>
+                                    <td id="dt-nasc-cliente">20/01/1980</td>
+                                    <td id="endereco-cliente">Rua Marechal Aroldo</td>
+                                    <td id="numero-cliente">64</td>
+                                    <td id="bairro-cliente">Campo verde</td>
+                                    <td id="cidade-cliente">Barueri</td>
+                                    <td id="uf-cliente">SP</td>
+                                    <td id="tel-cliente">(11) 94987-1845</td>
+                                    <td id="more-cliente"><i class="fas fa-plus"></i></td>
+                                </tr>
+                                <!-- <tr>
+                                    <td><input type="checkbox" name="selected"></td>
+                                    <td>1654</td>
+                                    <td>Audi</td>
+                                    <td>Audi</td>
+                                    <td>2020</td>
+                                    <td>250000</td>
+                                </tr> -->
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+            </main>
+        </div>
+        <script src="js/clientes.js"></script>
+    </body>
+</html>

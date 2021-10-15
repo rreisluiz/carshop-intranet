@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width">
+        <title>Home - Intranet VV</title>
+        <link rel="stylesheet" href="css/reset.css">
+        <link rel="stylesheet" href="css/style-home.css">
+        <link rel="stylesheet" href="css/style-sale-data.css">
+        <link rel="stylesheet" href="css/style-dados-veiculo.css">
+        <link href="https://fonts.googleapis.com/css2?family=PT+Sans+Narrow&display=swap" rel="stylesheet">
+        <script src="https://kit.fontawesome.com/b6f9a82d96.js" crossorigin="anonymous"></script>
+    </head>
+    <body>
+        <div class="container">
+            <header>
+                <div class="logo-title">
+                    <div class="logo">
+                        <h1>VrumCar <i class="fas fa-car"></i> |</h1>
+                    </div>
+                    <div class="header-title">
+                        <h1>Venda - Código: 1</h1>
+                    </div>
+                </div>
+                <div class="user">
+                    <div class="user-photo">
+                        <div class="photo">
+                        </div>
+                    </div>
+                    <div class="user-data">
+                        <h2 class="user-id">ID: 64240</h2>
+                        <h2 class="user-name">Rodrigo Luiz Menezes dos Reis</h2>
+                        <h2 class="user-function">Gerente</h2>
+                    </div>
+                    <div class="btn-logout" onclick="changeWindow(logoff)">
+                        <i class="fas fa-sign-out-alt"></i>
+                    </div>
+                </div>
+            </header>
+            <nav>
+                <div class="nav-items">
+                    <div id="index" class="nav-item" onclick="changeWindow(index)">
+                        <i class="fas fa-user-circle"></i>
+                    </div>
+                    <hr>
+                    <div id="vendas" class="nav-item" onclick="changeWindow(vendas)">
+                        <i class="fas fa-coins"></i>
+                    </div>
+                    <hr>
+                    <div id="veiculos" class="nav-item" onclick="changeWindow(veiculos)">
+                        <i class="fas fa-car-side"></i>
+                    </div>
+                    <hr>
+                    <div id="clientes" class="nav-item" onclick="changeWindow(clientes)">
+                        <i class="fas fa-users"></i>
+                    </div>
+                    <hr>
+                    <div id="funcionarios" class="nav-item" onclick="changeWindow(funcionarios)">
+                        <i class="fas fa-id-card-alt"></i>
+                    </div>
+                    <hr>
+                    <div id="fornecedores" class="nav-item" onclick="changeWindow(fornecedores)">
+                        <i class="fas fa-truck"></i>
+                    </div>
+                    <hr>
+                    <div id="orcamento" class="nav-item" onclick="changeWindow(orcamento)">
+                        <i class="fas fa-search-dollar"></i>
+                    </div>
+                    <hr>
+                    <div id="ranking" class="nav-item" onclick="changeWindow(ranking)">
+                        <i class="fas fa-medal"></i>
+                    </div>
+                    <hr>
+                </div>
+            </nav>
+            <main>
+                <div class="main-sale-data-container">
+                    <div class="sale-data-s">
+                        <div class="sale-data-s-main">
+                            <div class="title">
+                                <h1>Dados da venda</h1>
+                            </div>
+                            <div class="s-data">
+                                <label for="s-codigo">Código:</label>
+                                <input readonly type="text" name="s-codigo" id="s-codigo" class="s-input" value="1">
+                                <label for="s-dt-venda">Data da venda:</label>
+                                <input readonly type="text" name="s-dt-venda" id="s-dt-venda" class="s-input" value="03/10/2020">
+                                <label for="s-forma-pgt">Forma de pagamento:</label>
+                                <input readonly type="text" name="s-forma-pgt" id="s-forma-pgt" class="s-input" value="Cheque">
+                            </div>
+                        </div>
+                        <div class="more-functions-s">
+                            <input type="button" id="btn-save-s" class="btn-more-f btn" value="Salvar alterações">
+                            <input type="button" id="btn-edit-s" class="btn-more-f btn" value="Editar">
+                            <input type="button" id="btn-delete-s" class="btn-more-fd btn" value="Excluir">
+                        </div>
+                    </div>
+                    <div class="vehicle-data-s">
+                        <div class="title">
+                            <h1>Automóvel</h1>
+                        </div>
+                        <div class="vds">
+                            <div class="sv-photo" style="background: url('/images/hyundai_azera.jpg');background-size: 100%;background-repeat: no-repeat;"></div>
+                            <div class="s-data">
+                                <label for="sv-codigo">Código:</label>
+                                <div class="sv-codigo">
+                                    <input readonly type="text" name="sv-codigo" id="sv-codigo" class="s-input" value="1">
+                                    <input type="button" id="btn-search-v" class="btn-search btn" value="Buscar">
+                                </div>
+                                <label for="sv-marca">Marca:</label>
+                                <input readonly type="text" name="s-marca" id="s-marca" class="s-input" value="Hyundai">
+                                <label for="s-modelo">Modelo:</label>
+                                <input readonly type="text" name="s-modelo" id="s-modelo" class="s-input" value="Azera">
+                                <label for="s-versao">Versão:</label>
+                                <input readonly type="text" name="s-versao" id="s-versao" class="s-input" value="3.0 V6 GDI Automático">
+                                <label for="s-ano">Ano:</label>
+                                <input readonly type="text" name="s-ano" id="s-ano" class="s-input" value="2020">
+                                <label for="s-valor">Valor:</label>
+                                <input readonly type="text" name="s-valor" id="s-valor" class="s-input" value="R$200.000,00">
+                                <a href="/dados-veiculo.html?id=1"><input type="button" id="btn-more-info-v" class="btn-more-info btn" value="Mais informações"></a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="buyer-data-s">
+                        <div class="title">
+                            <h1>Dados do comprador</h1>
+                        </div>
+                        <div class="s-data">
+                            <label for="sv-codigo">Código:</label>
+                            <div class="sv-codigo">
+                                <input readonly type="text" name="sv-codigo" id="sv-codigo" class="s-input" value="1">
+                                <input type="button" id="btn-search-b" class="btn-search btn" value="Buscar">
+                            </div>
+                            <label for="sv-nome">Nome:</label>
+                            <input readonly type="text" name="sv-nome" id="sv-nome" class="s-input" value="Rafael Lima">
+                            <label for="sv-cpf">CPF:</label>
+                            <input readonly type="text" name="sv-cpf" id="sv-cpf" class="s-input" value="165.145.154-78">
+                            <label for="sv-cnh">CNH:</label>
+                            <input readonly type="text" name="sv-cnh" id="sv-cnh" class="s-input" value="16547826518">
+                            <label for="sv-tel">Telefone:</label>
+                            <input readonly type="text" name="sv-tel" id="sv-tel" class="s-input" value="(11) 94584-4859">
+                            <input type="button" id="btn-more-info-b" class="btn-more-info btn" value="Mais informações" onclick="changeWindow(dadosCliente)">
+                        </div>
+                    </div>
+                    <div class="salesman-data-s">
+                        <div class="title">
+                            <h1>Dados do vendedor</h1>
+                        </div>
+                        <div class="vds">
+                            <div class="sv-photo" style="background: url('/images/person.jpg');background-size: 100%;background-repeat: no-repeat;"></div>
+                            <div class="s-data">
+                                <label for="sv-codigo">Código:</label>
+                            <div class="sv-codigo">
+                                <input readonly type="text" name="sv-codigo" id="sv-codigo" class="s-input" value="1">
+                                <input type="button" id="btn-search-ss" class="btn-search btn" value="Buscar">
+                            </div>
+                            <label for="sv-nome">Nome:</label>
+                            <input readonly type="text" name="sv-nome" id="sv-nome" class="s-input" value="Rodrigo Luiz">
+                            <label for="sv-cpf">CPF:</label>
+                            <input readonly type="text" name="sv-cpf" id="sv-cpf" class="s-input" value="465.147.854-12">
+                            <label for="sv-cnh">RG:</label>
+                            <input readonly type="text" name="sv-cnh" id="sv-rg" class="s-input" value="16.156.485-8">
+                            <label for="sv-tel">Telefone:</label>
+                            <input readonly type="text" name="sv-tel" id="sv-tel" class="s-input" value="(11) 94584-4859">
+                            <input type="button" id="btn-more-info-ss" class="btn-more-info btn" value="Mais informações" onclick="changeWindow(dadosFuncionario)">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </main>
+        </div>
+    </body>
+    <script src="js/nav.js"></script>
+    <script src="js/index.js"></script>
+</html>

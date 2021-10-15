@@ -1,0 +1,92 @@
+.vehicles {
+    grid-row: 2/3;
+    grid-column: 1/3;
+}
+
+.client-data-main {
+    display: grid;
+    grid-row: 2/3;
+    grid-column: 2/3;
+    grid-template-columns: 100%;
+    grid-template-rows: 50% 42% 5%;
+    grid-row-gap: 10px;
+    margin: 0 20%;
+}
+
+.client-datas, .client-data-address {
+    background-color: white;
+    border: solid 1px #172A3A;
+}
+
+.client-datas {
+    grid-row: 1/2;
+    grid-column: 1/2;
+}
+
+.client-data {
+    display: grid;
+    grid-template-columns: 1fr 4fr;
+    grid-template-rows: 100%;
+}
+
+.c-photo {
+    width: 106%;
+    height: 358px;
+    background-color: #C4C5C5;
+}
+
+.c-data {
+    display: flex;
+    flex-direction: column;
+    padding: 0px 30px;
+}
+
+.c-data > label {
+    font-size: 1.1em;
+    font-weight: 600;
+    margin: 10px 0 0 0;
+}
+
+.client-data-address {
+    grid-row: 2/3;
+    grid-column: 1/2;
+}
+
+
+.other-functions {
+    grid-row: 3/4;
+    grid-column: 1/2;
+    margin: 0 10px;
+}
+
+.other-functions > div, .other-functions {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.other-functions > div {
+    display: flex;
+    justify-content: space-between;
+    width: 50%;
+}
+   
+.other-functions > div > input {
+    width: 45%;
+    font-size: 1.2em;
+    color: white;
+    background-color: #172A3A;
+    border: none;
+}
+
+.other-functions > input {
+    width: 20%;
+    font-size: 1.2em;
+    color: white;
+    background-color: #F25F5C;
+    border: solid 1px #172A3A;
+}
+
+#more-cliente:hover {
+    cursor: pointer;
+}

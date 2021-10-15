@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width">
+        <title>Home - Intranet VV</title>
+        <link rel="stylesheet" href="css/reset.css">
+        <link rel="stylesheet" href="css/style-home.css">
+        <link rel="stylesheet" href="css/style-veiculos.css">
+        <link rel="stylesheet" href="css/style-clientes.css">
+        <link rel="stylesheet" href="css/style-dados-veiculo.css">
+        <link href="https://fonts.googleapis.com/css2?family=PT+Sans+Narrow&display=swap" rel="stylesheet">
+        <script src="https://kit.fontawesome.com/b6f9a82d96.js" crossorigin="anonymous"></script>
+    </head>
+    <body>
+        <div class="container">
+            <header>
+                <div class="logo-title">
+                    <div class="logo">
+                        <h1>VrumCar <i class="fas fa-car"></i> |</h1>
+                    </div>
+                    <div class="header-title">
+                        <h1>Funcionário - Código: 1</h1>
+                    </div>
+                </div>
+                <div class="user">
+                    <div class="user-photo">
+                        <div class="photo">
+                        </div>
+                    </div>
+                    <div class="user-data">
+                        <h2 class="user-id">ID: 64240</h2>
+                        <h2 class="user-name">Rodrigo Luiz Menezes dos Reis</h2>
+                        <h2 class="user-function">Gerente</h2>
+                    </div>
+                    <div class="btn-logout" onclick="changeWindow(logoff)">
+                        <i class="fas fa-sign-out-alt"></i>
+                    </div>
+                </div>
+            </header>
+            <nav>
+                <div class="nav-items">
+                    <div id="index" class="nav-item" onclick="changeWindow(index)">
+                        <i class="fas fa-user-circle"></i>
+                    </div>
+                    <hr>
+                    <div id="vendas" class="nav-item" onclick="changeWindow(vendas)">
+                        <i class="fas fa-coins"></i>
+                    </div>
+                    <hr>
+                    <div id="veiculos" class="nav-item" onclick="changeWindow(veiculos)">
+                        <i class="fas fa-car-side"></i>
+                    </div>
+                    <hr>
+                    <div id="clientes" class="nav-item" onclick="changeWindow(clientes)">
+                        <i class="fas fa-users"></i>
+                    </div>
+                    <hr>
+                    <div id="funcionarios" class="nav-item" onclick="changeWindow(funcionarios)">
+                        <i class="fas fa-id-card-alt"></i>
+                    </div>
+                    <hr>
+                    <div id="fornecedores" class="nav-item" onclick="changeWindow(fornecedores)">
+                        <i class="fas fa-truck"></i>
+                    </div>
+                    <hr>
+                    <div id="orcamento" class="nav-item" onclick="changeWindow(orcamento)">
+                        <i class="fas fa-search-dollar"></i>
+                    </div>
+                    <hr>
+                    <div id="ranking" class="nav-item" onclick="changeWindow(ranking)">
+                        <i class="fas fa-medal"></i>
+                    </div>
+                    <hr>
+                </div>
+                <script src="js/nav.js"></script>
+            </nav>
+            <main>
+                <div class="client-data-main">
+                    <div class="client-datas">
+                        <h1 class="title">Funcionário</h1>
+                        <div class="client-data">
+                            <div class="client-photo">
+                                <div class="c-photo" style="background: url('/images/person.jpg');background-size: 100%;background-repeat: no-repeat;"></div>
+                                <label for="btn-image" id="btn-image" class="btn-image btn">Alterar foto</label>
+                                <input disabled type="file" accept=".jpg,.png" id="btn-image-file" class="btn-image" value="Alterar foto">
+                            </div>
+                            <div class="c-data">
+                                <label for="cd-codigo">Código:</label>
+                                <input readonly type="text" name="cd-codigo" id="cd-codigo" class="ds-input" value="1">
+                                <label for="cd-nome">Nome:</label>
+                                <input readonly type="text" name="cd-nome" id="cd-nome" class="ds-input" value="Rodrigo Luiz">
+                                <label for="cd-cpf">CPF:</label>
+                                <input readonly type="text" name="cd-cpf" id="cd-cpf" class="ds-input" value="465.147.854-12">
+                                <label for="cd-rg">RG:</label>
+                                <input readonly type="text" name="cd-rg" id="cd-rg" class="ds-input" value="16.156.485-8">
+                                <label for="cd-dt-nasc">Data de nascimento:</label>
+                                <input readonly type="text" name="cd-dt-nasc" id="cd-dt-nasc" class="ds-input" value="03/10/1990">
+                                <label for="cd-carroceria">Telefone:</label>
+                                <input readonly type="tel" name="cd-carroceria" id="cd-carroceria" class="ds-input" value="(11) 93165-4857">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="client-data-address">
+                        <h1 class="title">Endereço</h1>
+                        <div class="c-data">
+                            <label for="cd-endereco">Endereço:</label>
+                            <input readonly type="text" name="cd-endereco" id="cd-endereco" class="ds-input" value="Rua do coqueiro">
+                            <label for="cd-numero">Número:</label>
+                            <input readonly type="text" name="cd-numero" id="cd-numero" class="ds-input" value="74">
+                            <label for="cd-uf">UF:</label>
+                            <input readonly type="text" name="cd-uf" id="cd-uf" class="ds-input" value="SP">
+                            <label for="cd-cidade">Cidade:</label>
+                            <input readonly type="text" name="cd-cidade" id="cd-cidade" class="ds-input" value="Carapicuíba">
+                            <label for="cd-dt-bairro">Bairro:</label>
+                            <input readonly type="text" name="cd-bairro" id="cd-bairro" class="ds-input" value="Vila Boa">
+                        </div>
+                    </div>
+                    <div class="other-functions">
+                        <input type="button" class="btn-delete btn" value="Excluir">
+                        <div>
+                            <input type="button" id="btn-edit" class="btn-edit btn" value="Editar">
+                            <input type="button" name="save-edits" id="btn-save-edits" class="btn" value="Salvar alterações">
+                        </div>
+                    </div>
+                </div>
+            </main>
+        </div>
+    </body>
+</html>
