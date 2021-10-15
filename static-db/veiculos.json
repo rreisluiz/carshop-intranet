@@ -1,0 +1,167 @@
+{ "veiculos": [
+    {
+        "codigo": 1,
+        "situacao": "Vendido",
+        "dataVenda": "03/10/2020",
+        "foto": "/images/hyundai_azera.jpg",
+        "marca": "Hyundai",
+        "modelo": "Azera",
+        "versao": "3.0 V6 GDI Automático",
+        "ano": "2020",
+        "cor": "Preto",
+        "carroceria": "Sedan",
+        "combustivel": "Gasolina",
+        "importado": "Sim",
+        "valor": "R$200.000,00",
+        "motor": {
+            "cilindrada": "3.0",
+            "potencia": "261/6400",
+            "qtdCilindros": "6",
+            "qtdValvulas": "4",
+            "aceleracao": "12",
+            "transmissao": "Automático",
+            "velocMax": "200",
+            "consumo": "8,2"
+        },
+        "conforto": {
+            "vidroEletrico": "Sim",
+            "arCondicionado": "Sim",
+            "direcao": "Hidráulica",
+            "travaEletrica": "Sim",
+            "sensor": "Sim",
+            "pilotoAuto": "Não",
+            "regVolante": "Sim",
+            "som": "Sim"
+        },
+        "freios": {
+            "freioT": "Disco ventilado",
+            "freioD": "Disco sólido"
+        },
+        "seguranca": {
+            "ctrlEstab": "Sim",
+            "ctrlTracao": "Sim",
+            "qtdAirbag": "7"
+        },
+        "rodas": {
+            "tipoRodas": "Liga leve",
+            "aro": "19",
+            "estepe": "Space saver"
+        },
+        "suspensao": {
+            "dianteiras": "McPherson",
+            "molasDianteiras": "Helicoidal",
+            "traseiras": "Multilink",
+            "molasTraseiras": "Helicoidal"
+        }
+    },
+    {
+        "codigo": 2,
+        "situacao": "Vendido",
+        "dataVenda": "10/10/2020",
+        "foto": "/images/ford_mustang.png",
+        "marca": "Ford",
+        "modelo": "Mustang",
+        "versao": "5.0 V8 TI-VCT Black Shadow SelectShift",
+        "ano": "2021",
+        "cor": "Branco",
+        "carroceria": "Coupé",
+        "combustivel": "Gasolina",
+        "importado": "Sim",
+        "valor": "R$379.000,00",
+        "motor": {
+            "cilindrada": "5.0",
+            "potencia": "466/6500",
+            "qtdCilindros": "8",
+            "qtdValvulas": "4",
+            "aceleracao": "4,3",
+            "transmissao": "Automática",
+            "velocMax": "250",
+            "consumo": "5,9"
+        },
+        "conforto": {
+            "vidroEletrico": "Sim",
+            "arCondicionado": "Sim",
+            "direcao": "Elétrica",
+            "travaEletrica": "Sim",
+            "sensor": "Sim",
+            "pilotoAuto": "Não",
+            "regVolante": "Sim",
+            "som": "Sim"
+        },
+        "freios": {
+            "freioT": "Disco sólido",
+            "freioD": "Disco ventilado"
+        },
+        "seguranca": {
+            "ctrlEstab": "Sim",
+            "ctrlTracao": "Sim",
+            "qtdAirbag": "6"
+        },
+        "rodas": {
+            "tipoRodas": "Liga leve",
+            "aro": "19",
+            "estepe": "Space saver"
+        },
+        "suspensao": {
+            "dianteiras": "McPherson",
+            "molasDianteiras": "Helicoidal",
+            "traseiras": "Multilink",
+            "molasTraseiras": "Helicoidal"
+        }
+    },
+    {
+        "codigo": 3,
+        "situacao": "Vendido",
+        "dataVenda": "20/10/2020",
+        "foto": "/images/bmw_430i.png",
+        "marca": "BMW",
+        "modelo": "430i",
+        "versao": "2.0 16V Cabrio Sport",
+        "ano": "2019",
+        "cor": "Preto",
+        "carroceria": "Conversível",
+        "combustivel": "Gasolina",
+        "importado": "Sim",
+        "valor": "R$370.000,00",
+        "motor": {
+            "cilindrada": "2.0",
+            "potencia": "252/5200",
+            "qtdCilindros": "4",
+            "qtdValvulas": "4",
+            "aceleracao": "6,4",
+            "transmissao": "Automática",
+            "velocMax": "250",
+            "consumo": "9,8"
+        },
+        "conforto": {
+            "vidroEletrico": "Sim",
+            "arCondicionado": "Sim",
+            "direcao": "Elétro-Hidráulica",
+            "travaEletrica": "Sim",
+            "sensor": "Sim",
+            "pilotoAuto": "Não",
+            "regVolante": "Sim",
+            "som": "Sim"
+        },
+        "freios": {
+            "freioT": "Disco ventilado",
+            "freioD": "Disco ventilado"
+        },
+        "seguranca": {
+            "ctrlEstab": "Sim",
+            "ctrlTracao": "Sim",
+            "qtdAirbag": "6"
+        },
+        "rodas": {
+            "tipoRodas": "Liga leve",
+            "aro": "19",
+            "estepe": "Não disponível"
+        },
+        "suspensao": {
+            "dianteiras": "McPherson",
+            "molasDianteiras": "Helicoidal",
+            "traseiras": "Multilink",
+            "molasTraseiras": "Helicoidal"
+        }
+    }
+]}
